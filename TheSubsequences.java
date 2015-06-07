@@ -1,12 +1,17 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
+/**
+ * CodeFu Online Round 1 // 200 points 
+ *Problem: http://codefu.mk/codefu2015-round1.html?subpage=problem&problemid=2166
+ * 
+ * @author Mihajlovsky
+ *
+ */
 public class TheSubsequences {
 	public static void main(String[] args) {
 		
 		//test primer
 		System.out.println(count(100, 650, 65));
-		
 		
 	}
 	
