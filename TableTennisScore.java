@@ -1,4 +1,5 @@
 /**
+ *CodeFu Online Round 1 // 100 points 
  * Problem: http://codefu.mk/practice.html?subpage=problem&problemid=2170
  *
  * @author Mihajlovsky
