@@ -1,3 +1,4 @@
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**
@@ -7,11 +8,12 @@ import java.util.NoSuchElementException;
  * @author Mihajlovsky
  *
  */
+
 public class TheSubsequences {
 	public static void main(String[] args) {
 		
 		//test primer
-		System.out.println(count(100, 650, 65));
+		System.out.println(count(2887, 28398, 31463));
 		
 	}
 	
@@ -30,8 +32,7 @@ public static int count(int A, int B, int C){
 		
 		SLL<Integer> listA = new SLL<Integer>();
 		SLL<Integer> listC = new SLL<Integer>();
-		SLL<Integer> finalList= new SLL<Integer>();
-		
+	
 		
 		String word2=String.valueOf(num);
 		
@@ -59,8 +60,9 @@ public static int count(int A, int B, int C){
 		SLLNode<Integer> firstA = listA.getFirst();
 		SLLNode<Integer> firstC= listC.getFirst();
 		
+		
 		//brojot sto se proveruva mora da ima poveke cifri od podbrojot
-		if (listA.length()>=listC.length()){
+	
 		while(firstA!=null)
 		{
 			//ako ne se isti cifrite se proveruva narednata
@@ -105,12 +107,13 @@ public static int count(int A, int B, int C){
 			
 			if (subnumber)
 			{
-				//finalList.insertLast(y);
-				System.out.println(y);
+			
 				finalCount++;
+				
 				 break;				
 			}
 			
+		
 			
 			if (!subnumber && firstA!=null)
 			{
@@ -124,18 +127,9 @@ public static int count(int A, int B, int C){
 		listA.deleteList();
 		listC.deleteList();
 	
-		}}
+		}
 		
-		
-		// ova e otstraneto za da se zabrza zadacata, inaku e tocen kod
-		/*SLLNode<Integer> firstFinal = finalList.getFirst();
-		
-		while (firstFinal!=null)
-		{
-			finalCount++;
-			firstFinal=firstFinal.succ;
-		}*/
-		
+	
 		return finalCount;
 		
 	}	
@@ -368,5 +362,4 @@ public static int count(int A, int B, int C){
 			return element.toString();
 		}
 	}
-
 
