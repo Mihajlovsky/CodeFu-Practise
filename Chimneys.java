@@ -18,7 +18,7 @@ public class Chimneys {
 
 	 public static int getArea(int[] x, int[] y)
 	 {
-		 int a=0;
+		int a=0;
 		 
 		 int minX=x[0]; int maxX=x[0];
 		 int minY=y[0]; int maxY=y[0];
@@ -27,13 +27,12 @@ public class Chimneys {
 		 {
 			 if (i<minX)
 			 {
-				 minX=i;
-				 i=0;
+				 minX=i;				 
 			 }
+			 
 			 if (i>maxX)
 			 {
-				 maxX=i;
-				 i=0;
+				 maxX=i;				
 			 }
 		 }
 		 
@@ -41,13 +40,12 @@ public class Chimneys {
 		 {
 			 if (i<minY)
 			 {
-				 minY=i;
-				 i=0;
+				 minY=i;				 
 			 }
+			 
 			 if (i>maxY)
 			 {
-				 maxY=i;
-				 i=0;
+				 maxY=i;				 
 			 }
 		 }
 		 
