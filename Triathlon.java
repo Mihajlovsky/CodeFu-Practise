@@ -19,22 +19,22 @@ public class Triathlon {
 
 	public static String getWinner(String[] results)
 	{
-		float Best=0;
-		float Temp=0;
-		String fastest="";
+		float B=0;
+		float T=0;
+		String F="";
 		
 		for (String s:results)
 		{
 			String[] ss=s.split(";");
-			Temp=Float.parseFloat(ss[1])+Float.parseFloat(ss[2])+Float.parseFloat(ss[3]);
-			if (Temp>Best)
+			T=Float.parseFloat(ss[1])+Float.parseFloat(ss[2])+Float.parseFloat(ss[3]);
+			if (T>B)
 			{
-				Best=Temp;
-				fastest=ss[0];
-				Temp=0;
+				B=T;
+				F=ss[0];
+				T=0;
 			}
 		}
 				
-		return fastest;
+		return F;
 	}
 }
