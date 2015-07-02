@@ -1,7 +1,7 @@
 /**
  *CodeFu "Shortest Solution" :D // 100 points 
  
- * Problem: http://codefu.mk/shortest-8.html?subpage=problem&problemid=2108
+ * Problem: http://codefu.mk/shortest7.html?subpage=problem&problemid=1740
  *
  * @author Mihajlovsky
  *
